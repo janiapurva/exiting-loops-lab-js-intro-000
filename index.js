@@ -1,9 +1,9 @@
-function loops breakOut(array,changeValue,stopvalue){
-  for(var i=0;i<array.lenth;i++){
-    if(array[i]===stopValue){
-      break;
+function breakOut(array, changeValue, stopValue) {
+  for (var i = 0, l = array.length; i < l ; i++ ) {
+    if (array[i] === stopValue) {
+      break
     }
-      return array
-    }
+    array[i] = changeValue
   }
+  return array
 }
